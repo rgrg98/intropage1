@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood Donation</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Nanum+Gothic|Titillium+Web&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+@font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+	body{margin:0;}
+	section{margin:0;padding:0;}
+	#monitor{width:80px;height:30px;color:#e0243f;position:fixed;top:0px;right:0px;}
+
+	#ti{height:900px;}
+
+	#titi{font-family:'Black Han Sans', sans-serif;font-size:100px;color:#e0243f;font-weight:5;position:absolute;top:200px;opacity:0;margin:0;}
+
+	#titi2{color:#e0243f;font-family: 'Titillium Web', sans-serif;position:absolute;top:290px;font-size:22px;opacity:0;}
+
+	#titi3{color:#e0243f;font-family: 'Black Han Sans', sans-serif;position:absolute;top:500px;font-size:75px;opacity:0;}
+
+
+	#st{width:385px;position:absolute
+		;top:230px;
+		left:550px;z-index:3;
+		transition:all 1s;
+		animation:heartbeat 1.3s infinite;} 
+				
+	#st2{width:900px;
+		position:absolute;
+		transition:all 1s;
+		top:333px;
+		left:305px;
+		z-index:3}
+
+	#aa{opacity:0;transition:all 1s;}
+
+	#sbj{top:195px;left:300px;
+		padding:8px;line-height:2.0;
+		opacity:0;transition:0.8s;
+		z-index:5;}
+
+	#bogun
+	{top:280px;left:380px;
+	 padding:8px;line-height:1.8;
+	 opacity:0;transition:0.5s;z-index:5;
+	}
+
+	#bogun2
+	{top:690px;left:420px;
+	 padding:8px;line-height:1.8;
+	 opacity:0;z-index:15;transition:0.5s;}
+
+	#bogun3
+	{top:320px;left:500px;
+	padding:8px;line-height:1.8;
+	opacity:0;transition:0.5s;z-index:5;}
+
+	#b2
+	{top:80px;left:135px;}
+
+	#b2{opacity: 1;}
+	#b2:hover{opacity: 0.3; transition: 0.8s;}
+
+    
+	#b4
+	{top:65px;left:800px;}
+
+	#b4{opacity: 1;}
+	#b4:hover{opacity: 0.3; transition: 0.8s;}
+
+	#c2{top:190px;}
+
+	#c3{top:260px;}
+	#c4{top:610px;}
+
+	#c5{top:680px;}
+
+	#pack{width:300px;position:absolute;
+		  top:850px;left:1200px;
+		  animation:jello-horizontal
+ 		2s infinite;cursor:pointer;}
+
+
+	#jun
+	{top:400px;left:100px;
+	color:white;padding:8px;
+	opacity:0;transition:all 0.8s;}
+
+	#sung
+	{top:180px;left:1100px;color:white;
+		padding:8px;transition:all 0.8s;
+		opacity:0;}
+
+
+	#pack2{position:absolute;top:820px;left:1258px;}	
+
+	.a{height:900px;
+		margin:0;
+		position:relative;
+		overflow:hidden;}
+
+	.aback{margin:0;position:relative;overflow:hidden;}
+
+	.k{font-family: 'Black Han Sans', sans-serif;font-size:80px;font-weight:3;margin-left:20px;
+			position:relative;}
+	.kk{ font-family:
+	    'S-CoreDream-8Heavy',
+	     sans-serif;font-size:40px;
+		margin-left:20px;font-weight:0.2;
+		position: relative;}
+
+	.kk2{font-family: 'Nanum Gothic', sans-serif;font-size:20px;
+		margin-left:20px;
+		line-height:30px;
+		position:relative;}
+	.fefe{position:relative;
+		top:-80px;width:500px;
+		left:800px;
+		overflow:hidden;}
+
+	.tblack{position:absolute;
+		background:black;
+		border-radius:8px;
+		font-weight:2;}
+
+	.tip{font-size:35px;color:#e0243f;
+		position:absolute;
+		animation:jello-horizontal
+ 		1.3s infinite;cursor:pointer;}
+
+.tipback{position:absolute;background:#e0243f;
+	padding:8px;border-radius:8px;
+	transition:all 0.8s;}
+
+
+
+
+
+	h2{margin:0;}
+
+	@keyframes rtol{
+			from{left:-100px;opacity:0;}to{left:30px;opacity:1;}
+		}
+
+	@keyframes rtol2{
+			from{left:-100px;opacity:0;}to{left:90px;opacity:1;}
+		}
+
+		@keyframes rtol3{
+			from{left:-100px;opacity:0;}to{left:200px;opacity:1;}
+		}
+
+		@keyframes rtol4{
+			from{left:-100px;opacity:0;}to{left:250px;opacity:1;}
+		}
+
+
+		@keyframes rtol5{
+			from{left:-100px;}to{left:90px;}
+		}
+
+
+		@keyframes rrr{
+			from{left:0px;}to{left:800px;}
+		}
+
+
+
+
+	@keyframes tata{
+			from{left:-300px;opacity:0;}to{left:800px;opacity:1;}
+		}
+
+	@keyframes haha{
+			from{right:-20px;opacity:0;}to{right:80px;opacity:1;}
+		}
+
+	@keyframes rtor{
+			from{right:100px;opacity:0;}to{right:0px;opacity:1;}
+		}
+	@keyframes ttob{
+			from{top:0px;opacity:0;}to{top:30px;opacity:1;}
+		}
+
+		@keyframes btot{
+			from{top:500px;opacity:0;}to{top:-120px;opacity:1;}
+		}
+
+
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+@-webkit-keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}@keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}
+
+
+@-webkit-keyframes scale-in-hor-left{0%{-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}}@keyframes scale-in-hor-left{0%{-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0;opacity:1}}
+
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+
+@-webkit-keyframes roll-out-bottom{0%{-webkit-transform:translateY(0) rotate(0deg);transform:translateY(0) rotate(0deg);opacity:1}100%{-webkit-transform:translateY(800px) rotate(540deg);transform:translateY(800px) rotate(540deg);opacity:0}}@keyframes roll-out-bottom{0%{-webkit-transform:translateY(0) rotate(0deg);transform:translateY(0) rotate(0deg);opacity:1}100%{-webkit-transform:translateY(800px) rotate(540deg);transform:translateY(800px) rotate(540deg);opacity:0}}
+		
+
+@-webkit-keyframes jello-horizontal{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes jello-horizontal{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+</style>
+
+<body>
+	<div id="stback">
+	<img src="start.png" id="st">
+	<img src="start2.png" id="st2">
+</div>
+	<div id="ti">
+	<h1 id="titi">
+	헌혈, 어디까지 알고있니?</h1>
+	<p id="titi2">"How much do you know about blood donation?"</p>
+	<p id="titi3">
+		제대로<br>알아보고 하자!</p>
+	</div>
+
+	<div class="aback">
+	<section class="a" id="aa" 
+	style="background:#e0243f;color:white;">
+		<h2 class="k" id="a1"
+		style="margin-bottom:100px;text-shadow:3px 3px 3px black;">
+		헌혈과정</h2>
+	<p class="kk" id="a2" style="cursor:pointer;">
+	1.신분증 확인<br></p>
+	<div id="sbj" class="tblack">
+	<h2 style="font-size:15px;
+	font-family: 'Nanum Gothic', sans-serif;">
+	신분증의 종류<br></h2>
+
+		  	<p style="font-size:12px;
+		  	   font-family: 'Nanum Gothic', sans-serif;">
+	    주민등록증, 여권 등 관공서 또는 공공기관이 발행한 것으로<br>사진과 주민등록번호가 확인가능한 것을 말합니다.</p>
+		  	</div>
+
+ <div class="tblack"id="bogun">
+	 <h2 style="font-size:15px;
+		  	   font-family:
+		  	   'Nanum Gothic',
+		  	   sans-serif;">
+  혈액정보관리시스템(BIMS)을 통해 과거헌혈경력과 그 검사결과를 조회합니다.</h2>
+
+	  <p style="font-size:10px;
+		  	   font-family: 'Nanum Gothic',
+		  	    sans-serif;">
+		※
+		헌혈유보군이란 :<br>
+		헌혈유보군(Donor Deferral Registry : DDR)
+		이라 함은 헌혈을 일정기간 보류해야 하는 헌혈자를 말합니다.
+		<br> 정상적으로 헌혈에 참여해 주신 정기 헌혈자분들이라 하더라도 과거 혈액검사에서<br> 한 번 이상 양성결과가 있었던 분들은 헌혈유보군으로 등록됩니다.</p>
+		 </div>
+
+		  <p class="kk" id="a3" style="cursor:pointer;">
+		  	2.헌혈경력조회<br></p>
+		  <p class="kk"id="a4" style="cursor:pointer">
+		  	3.헌혈 전 검사 <br></p>
+		   <p class="kk2" id="a5">
+		   	- 혈압,맥박,체온 측정<br>
+		    - 혈액형 검사<br>
+		    - 혈액비중 검사<br>
+		    - 혈소판 수 측정<br>
+		    - 문진<br></p>
+
+<div class="tblack" id="bogun3">		  	<h2 style="font-size:15px;
+		   font-family:
+		  'Nanum Gothic',
+		  sans-serif;">
+		혈압,맥박,체온 측정</h2>
+
+<p style="font-size:12px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;">
+	혈압은 수축기 혈압 90mmHg 미만<br> 또는 180mmHg 이상, 이완기 혈압 100mmHg 이상,<br> 맥박은 1분간 50회 미만이나 100회 초과,체온 37.5°C 초과시<br>  에는 채혈을 하지 않도록 혈액관리법상 제한이 있습니다.<br> 이러한 경우는 혈액순환기계에 부담을 줄 수 있으므로 헌혈 전에 측정을 하고 있습니다.</p>
+
+<h2 style="font-size:15px;
+		   font-family:
+		  'Nanum Gothic',
+		  sans-serif;"> 혈액형 검사</h2>
+
+<p style="font-size:12px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;">
+	A,B,O,AB형의 혈액형을 채혈현장에서는 혈구형만 검사하고,<br> 헌혈 후에 혈구형, 혈청형 등의 자세한 검사를 추가로 합니다.<br> 문진시 적혈구의 표면에 있는 각 혈액형의 항원과 검사시약 내의<br>항체가 반응하는 것을 혈구형 검사라고 하며, 이를 통해 혈액형을 판정합니다.
+
+<h2 style="font-size:15px;
+		   font-family:
+		  'Nanum Gothic',
+		  sans-serif;">혈액비중 검사</h2>
+
+<p style="font-size:12px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;">
+		  헌혈하기에 충분한 혈액이 있는지를 판단하려면 적혈구 내의 혈색소 수치를 측정하여야 하는데,<br> 간단한 방법으로 황산구리수용액의 비중을 이용할 수 있습니다.<br>
+
+황산구리수용액에 혈액을 한 방울 떨어뜨렸을 때 <br> 황산구리 수용액의 비중보다 혈액의 비중이 높으면 혈액이 가라앉고 낮으면 위로 떠오릅니다.<br>비중 1.052에서만 혈액이 가라앉으면 혈색소 수치가 12.0g/dL 이상인 것으로 성분헌혈만 가능 합니다.
+
+<h2 style="font-size:15px;
+		   font-family:
+		  'Nanum Gothic',
+		  sans-serif;">혈소판 수 측정</h2>
+
+<p style="font-size:12px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;">
+	혈소판은 지혈과 혈액응고에 꼭 필요한 혈액 내 혈구성분입니다.<br> 혈소판성분헌혈은 헌혈자의 혈소판 수치를 측정하여 혈액 1마이크로리터 당 15만개 (15만/uL)이상일 경우 가능합니다.</p>
+</div>
+
+		 <p class="kk" id="a6" style="cursor:pointer">
+		 4.헌혈상담후, 헌혈!</p>
+	<div class="tblack" id="bogun2">
+		<h2 style="font-size:13px;font-family: 'Nanum Gothic', sans-serif;">헌혈자는 전혈헌혈과 성분헌혈 중 하나를 선택할 수 있으며,<br> 당일 혈액제제별 병원수요량에 따라 간호사가 특정 헌혈종류를 권장하기도 합니다.</h2>
+		</div>
+
+		 <img src="blood.png" 
+		 style="position:relative;
+		 left:750px;width:800px;
+		 top:-35px;" id="bbp">
+	</section>
+</div>
+
+	<section class="a" style=
+	"background:url(htht.jpg);background-size: cover;background-attachment:fixed;">
+		<h2 class="k" id="b1"
+				  style="color:white;
+				  margin-top:20px;text-shadow:3px 3px 3px #e0243f;">
+		종류</h2>
+
+	<p class="kk" id="b2" style="color:#e0243f;cursor:pointer;font-size: 100px;">
+		전혈헌혈이란?<br></p>
+
+<div class="tblack" id="jun">
+	<p class="kk2" id="b3"
+	style="font-size:15px;margin:0;text-align: center;">
+	혈액의 모든 성분(적혈구, 백혈구, 혈장, 혈소판)을<br> 채혈하는 것으로 320mL, 400mL 두 종류.</p>
+</div>
+
+<p class="kk" id="b4" style="margin-top:20px;color:#e0243f;cursor:pointer;
+	font-size:100px;">
+		성분헌혈이란?<br></p>
+
+<div class="tblack" id="sung" style="opacity:0;">
+	
+	<h2 style="font-size:15px;
+		   font-family:
+		  'Nanum Gothic',
+		  sans-serif;
+		  text-align:center;">혈소판성분헌혈<br></h2>
+
+		  <p id="b5" class="kk2"
+	style="font-size:15px;margin:0;text-align: center;
+		margin-bottom:10px;">
+	성분채혈기를 이용하여 혈소판만을 채혈하고,<br> 나머지 성분은 헌혈자에게 되돌려주는 헌혈.<br>(250mL 정도 채혈)
+	</p>
+
+	<h2 style="font-size:15px;
+		   font-family:
+		  'Nanum Gothic',
+		  sans-serif;
+		  text-align:center;">
+	혈장성분헌혈</h2>
+
+	<p id="b6" class="kk2"
+	 style="font-size:15px;margin:0;text-align: center;
+	 	 margin-bottom:10px;">
+	성분채혈기를 이용하여 혈장만을 채혈하고,<br> 나머지 성분은 헌혈자에게 되돌려 주는 헌혈	<br>(500mL 정도 채혈)
+	</p>
+
+	
+	 	 <h2 style="font-size:15px;
+		   font-family:
+		  'Nanum Gothic',
+		  sans-serif;
+		  text-align:center;">
+		혈소판혈장성분헌혈<br></h2>
+
+<p id="b7" class="kk2"
+	 style="font-size:15px;margin:0;text-align: center;
+	 	 margin-bottom:10px;">
+		성분채혈기를 이용하여 혈소판과 혈장 성분을 채혈하고,<br> 나머지 성분은 헌혈자에게 되돌려 주는 헌혈<br>
+		(혈소판은 250mL 정도 채혈, 혈장은 300mL 정도 채혈)</p> 
+	</div>
+</section>
+
+
+
+	<section class="a" id="c" style="height:1100px;">
+
+		<img src="fe2.png" id="medi" 
+	style="position:relative;
+	       top:-35px;left:900px;width:400px;">
+
+	<h2 class="k" id="c1"
+	style="color:black;position:absolute;
+	text-shadow:3px 3px 3px #e0243f;">
+	기준</h2>
+
+	<h2 class="kk" id="c2" style="position:absolute;color:#e0243f;font-size:45px;">전혈</h2>
+	<p class="kk2" id="c3" style="position:absolute;">
+		<span style="font-weight: bold;">나이</span> : 320mL - 만 16세 ~ 69세 / 400mL - 만 17세 ~ 69세<br>
+<span style="font-size:12px;color: #e0243f;font-weight:bold;">
+※ 65세 이상인 자의 헌혈은 60세부터 64세까지 헌혈한 경험이 있는 자에 한함</span><br>
+<span style="font-weight: bold;">몸무게</span> : 남자 50kg 이상, 여자45kg 이상 (단 400mL 전혈헌혈은 남여모두 50kg 이상)<br>
+<span style="font-weight: bold;">혈액비중</span> : 1.053이상 (혈색소 12.5 g/dL)<br>
+<span style="font-weight: bold;">수축기혈압</span> : :90mmHg 초과,180mmHg미만<br>
+<span style="font-weight: bold;">이완기 혈압</span> : 100mmHg 미만<br>
+<span style="font-weight: bold;">소요시간</span> : 약 10분~15분 소요<br>
+<span style="font-weight: bold;">다음 헌혈가능일자</span> : 2개월 후 같은 날짜부터 다음헌혈 가능
+<span style="font-size:12px;color: #e0243f;font-weight:bold;">※ 연 5회까지 가능</span>
+	</p>
+
+
+
+	<h2 class="kk" id="c4" style="position:absolute;font-size:45px;color:#e0243f; ">성분헌혈</h2>
+	<p class="kk2" id="c5" style="position:absolute;">
+		<span style="font-weight:bold;">나이</span> : 혈소판성분헌혈, 혈소판혈장성분헌혈 - 만17세 ~ 59세 / 혈장성분헌혈 - 만17세 ~ 69세<br>
+<span style="font-size:12px;color:#e0243f;font-weight:bold;">※ 65세 이상인 자의 헌혈은 60세부터 64세까지 헌혈한 경험이 있는 자에 한함</span><br>
+<span style="font-weight:bold;">몸무게</span> : 남자 50kg 이상, 여자45kg 이상<br>
+<span style="font-weight:bold;">혈액비중</span> : 1.052이상 (혈색소 12.0 g/dL)<br>
+<span style="font-weight:bold;">혈압</span> : 수축기혈압:90mmHg 초과,180mmHg미만 이완기 혈압 : 100mmHg 미만<br>
+<span style="font-weight:bold;">총단백 수치</span> : 6.0g/dL이상(혈장성분헌혈, 혈소판혈장성분헌혈에 한함)
+<br>
+<span style="font-weight:bold;">혈소판수치</span> : 150,000개/μL이상(혈소판성분헌혈, 혈소판혈장성분헌혈에 한함)<br>
+<span style="font-weight:bold;">소요시간</span> : 혈장 - 약30~40분 소요 / 혈소판, 혈소판혈장 - 약1시간 ~ 1시간30분 소요<br>
+<span style="font-weight:bold;">다음 헌혈가능일자</span> : 2주후 같은 요일부터 다음 헌혈 가능<br>
+<span style="font-size:12px;color:#e0243f;font-weight:bold;">※성분헌혈(혈장, 혈소판, 혈소판혈장)이 연 24회인 경우 혈소판성분헌혈, 혈소판혈장성분헌혈은 불가능 함</span>
+	</p>
+
+<h2 class="tip" id="popo" style="top:360px;left:420px;">
+!</h2>
+
+<div class="tipback" id="bibi" style="left:450px;top:380px;opacity:0;">
+<h2 class="kk2"style="font-size:15px;color:white;">
+혈액비중이란 무엇인가요?</h2>
+
+<p  style="font-size:12px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;margin-left:20px;color:white;">혈액비중이란.<br> 일정량의 물의 무게를 1이라 할때 같은 양의 혈액의 무게를 말합니다.<br>
+
+		혈액비중은 적혈구 수량이나 신체 각 조직에 산소를 운반하는 헤모글로빈의 양에 영향을 받습니다.</p>
+</div>
+	</section>
+<section class="a" style=
+	"background:url(socks.jpg);background-size: cover;background-attachment:fixed;height:1200px;transition:all 1.8s" id="d">
+	<h2 class="k" id="d1"
+				  style="color:white;
+				  margin-top:20px;text-shadow:3px 3px 3px #e0243f;">
+		<img src="">
+		오해와 진실</h2>
+		<a href="https://www.bloodinfo.net/main.do"><img src="pack.gif" id="pack" ></a>
+		<p style="font-size:12px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;text-align:center;
+		  color:#e0243f;font-weight:bold;" id="pack2"  >"자세한 사항은
+		 click 해서 알아봐줘!"</p>
+		 </div>
+
+		 <h2 class="kk" id="d2" style="position:absolute;color:white;font-size:40px;margin-top:80px;margin-left: 50px;cursor:pointer;">헌혈을 하면 건강에 나쁘다?</h2>
+
+		 <div class="tipback" id="true1" 
+		 style="top:250px;left:50px;margin-top:30px;opacity:0;">
+		 <p  style="font-size:15px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;margin-left:20px;color:white;line-height:19px;">
+		  우리 몸에 있는 혈액량은 남자의 경우 체중의 8%, 여자는 7% 정도이다.<br> 예를 들어 체중이 60Kg인 남자의 몸 속에는 약 4,800mL의 혈액이 있고,<br> 50Kg인 여자는 3,500mL 정도의 혈액을 가지고 있다.<br>
+
+전체 혈액량의 15%는 비상시를 대비해 여유로 가지고 있는 것으로,<br> 헌혈 후 충분한 휴식을 취하면 건강에 아무런 지장을 주지 않는다.<br>신체 내·외부의 변화에 대한 조절능력이 뛰어난 우리 몸은헌혈 후<br> 1~2일 정도면 일상생활에 지장이 없도록 혈관 내외의 혈액순환이 회복된다.<br></p></div>
+
+<h2 class="kk" id="d3" style="position:absolute;color:white;font-size:40px;margin-top:80px;margin-left: 50px;top:450px; cursor:pointer;">헌혈을 통해 에이즈 등 질병에 감염될 수 있다?</h2>
+
+<div class="tipback" id="true2" 
+		 style="top:580px;left:50px;margin-top:30px;opacity:0;">
+<p  style="font-size:15px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;margin-left:20px;color:white;line-height:20px;">
+	헌혈과정은 매우 안전하다.<br>
+
+헌혈에 사용되는 모든 기구(바늘, 혈액백 등)은<br>  무균처리되어 있으며,한번 사용 후에는 모두 폐기처분 하기 때문에<br> 헌혈로 인해 에이즈등 다른질병에 감염될 위험이 전혀 없다.</p></div>
+
+<h2 class="kk" id="d4" style="position:absolute;color:white;font-size:40px;margin-top:80px;margin-left: 50px;top:750px;cursor:pointer;">혈을 하면 살이 빠진다던데..., 다이어트에도 좋나요?</h2>
+
+<div class="tipback" id="true3" 
+		 style="top:880px;left:50px;margin-top:30px;opacity:0;">
+<p  style="font-size:15px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;margin-left:20px;color:white;line-height:20px;">
+헌혈을 하면 헌혈량 만큼이 체외로 빠져나오는 것은 사실이지만<br> 조직에 있던 혈액이 혈관 내로 바로 이동하여 보상하며,<br> 이후 며칠 또는 몇 주간 음식 및 수분 섭취 등으로 원래 상태로 보충된다.<br> 따라서 헌혈은 다이어트와는 무관하다.<br></p></div>
+
+<div  style="background:black;position:absolute;
+width:1600px;top:1150px;padding:10px;"><p style= "font-size:10px;
+		  font-family:
+		  'Nanum Gothic',
+		  sans-serif;margin:auto;color:white;text-align:center; ">출처: <대한적십사회>,@ 20191013 designed by chio in hwa </p>
+
+</div>
+
+</section>
+
+
+
+
+
+	</section>
+	<div id="monitor"></div>
+
+	 <script type = "text/javascript">
+     	window.onscroll = function(){
+     	var t = document.documentElement.scrollTop
+      + document.body.scrollTop;monitor.innerHTML = t;
+        if(t>150) {st.style.top = "397px";}
+  		else{st.style.top = "230px";}
+  		if(t>150) {st2.style.top = "453px";}
+  		else{st2.style.top = "333px";}
+  		if (t>150) {titi.style.animation = "rtol 1s forwards";}
+  		else{titi.style.animation = "";}
+  		if (t>150) {titi2.style.animation = "tata 1s forwards";}
+  		else{titi2.style.animation = "";}
+  		if (t>150) {titi3.style.animation = "haha 1.1s forwards";}
+  		else{titi3.style.animation = "";}
+
+  		if(t>400) {aa.style.opacity = "1";}
+  		else{aa.style.opacity = "0";}
+  		if(t>600) {a1.style.animation = "ttob 1s forwards";}
+  		else{a1.style.animation = "";}
+  		if(t>600) {a2.style.animation = "rtol 1s forwards";}
+  		else{a2.style.animation = "";}
+  		if(t>600) {a3.style.animation = "rtol2 1.05s forwards";}
+  		else{a3.style.animation = "";}
+  		if(t>600) {a4.style.animation = "rtol3 1.1s forwards";}
+  		else{a4.style.animation = "";}
+  		if(t>600) {a5.style.animation = "rtol3 1.1s forwards";}
+  		else{a5.style.animation = "";}
+  		if(t>600) {a6.style.animation = "rtol4 1.1s forwards";}
+  		else{a6.style.animation = "";}
+  		if(t>800) {bbp.style.animation = "btot 1.1s forwards";}
+  		else{bbp.style.animation = "";}
+
+  		if(t>1500) {b1.style.animation = "ttob 1.1s forwards";}
+  		else{b1.style.animation = "";}
+
+  		if(t>1500) {b2.style.animation = "rtol5 1.1s forwards";}
+  		else{b2.style.animation = "";}
+
+  		if(t>1500) {b4.style.animation = "rrr 1.5s forwards";}
+  		else{b4.style.animation = "";}
+
+  		if(t>2100) {c1.style.animation = "ttob 1.5s forwards";}
+  		else{c1.style.animation = "";}
+  		if(t>2500) {c2.style.animation = "tracking-in-expand 1.5s forwards";}
+  		else{c2.style.animation = "";}
+  		if(t>2500) {c4.style.animation = "tracking-in-expand 1.5s forwards";}
+  		else{c4.style.animation = "";}
+  		if(t>2300) {medi.style.animation = "roll-out-bottom 3s forwards";}
+  		else{medi.style.animation = "";}
+  		if(t>2300) {c3.style.animation = "rtol 2s forwards";}
+  		else{c3.style.animation = "";}
+  		if(t>2300) {c5.style.animation = "rtol 2s forwards";}
+  		else{c5.style.animation = "";}
+  		if(t>2300) {popo.style.opacity = "1";}
+  		else{popo.style.opacity = "0";}
+  		if(t>3700) {d1.style.animation = "ttob 1.5s forwards";}
+  		else{d1.style.animation = "";}
+  		if(t>3700) {d2.style.animation = "focus-in-expand 1.3s forwards";}
+  		else{d2.style.animation = "";}
+  		if(t>3800) {d3.style.animation = "focus-in-expand 1.5s forwards";}
+  		else{d3.style.animation = "";}
+  		if(t>3900) {d4.style.animation = "focus-in-expand 1.8s forwards";}
+  		else{d4.style.animation = "";}
+  		if(t>3300) {d.style.opacity = "1";}
+  		else{d.style.opacity = "0";}
+  		
+
+
+
+
+
+
+  var astate = "off";
+			a2.onclick = function(){
+			if(astate == "off"){
+				sbj.style.opacity = "0";
+				astate = "on";
+			}else{
+			sbj.style.opacity = "1";
+			sbj.style.animation = "scale-in-hor-left 1s"
+			bogun.style.opacity = "0";
+			bogun2.style.opacity = "0";
+			bogun3.style.opacity = "0";
+				astate = "off";
+				}
+             }
+
+  var bstate = "off";
+			a3.onclick = function(){
+			if(astate == "off"){
+				bogun.style.opacity = "0";
+				astate = "on";
+			}else{
+				bogun.style.opacity = "1";
+				bogun.style.animation = "scale-in-hor-left 1s"
+				astate = "off";
+				}
+			}
+  var cstate = "off";
+			a4.onclick = function(){
+			if(astate == "off"){
+				bogun3.style.opacity = "0";
+				astate = "on";
+			}else{
+				bogun3.style.opacity = "1";
+				bogun3.style.animation = "scale-in-ver-center 1s"
+				astate = "off";
+				}
+			}
+   var cstate = "off";
+			a6.onclick = function(){
+			if(astate == "off"){
+				bogun2.style.opacity = "0";
+				astate = "on";
+			}else{
+				bogun2.style.opacity = "1";
+				bogun2.style.animation = "scale-in-hor-left 1s"
+				astate = "off";
+				}
+			}
+
+	var dstate = "off";
+				b2.onclick = function(){
+			if(astate == "off"){
+				jun.style.opacity = "1";
+				jun.style.animation = "scale-in-hor-left 0.8s"
+				astate = "on";
+			}else{
+				jun.style.opacity = "0";
+				astate = "off";
+				}
+			}
+
+		var estate = "off";
+				b4.onclick = function(){
+			if(astate == "off"){
+				sung.style.opacity = "1";
+				sung.style.animation = "scale-in-ver-center 1s";
+				astate = "on";
+			}else{
+				sung.style.opacity = "0";
+				astate = "off";
+				}
+			}
+
+
+		var fstate = "off";
+				popo.onclick = function(){
+			if(astate == "off"){
+				bibi.style.opacity = "1";
+				bibi.style.animation = "scale-in-ver-center 1s";
+				astate = "on";
+			}else{
+				bibi.style.opacity = "0";
+				astate = "off";
+				}
+			}
+
+			var gstate = "off";
+				d2.onclick = function(){
+			if(astate == "off"){
+			true1.style.opacity = "1";
+				true1.style.animation = "scale-in-ver-center 1s";
+				astate = "on";
+			}else{
+				true1.style.opacity = "0";
+				astate = "off";
+				}
+			}
+
+
+			var hstate = "off";
+				d3.onclick = function(){
+			if(astate == "off"){
+			true2.style.opacity = "1";
+				true2.style.animation = "scale-in-hor-left 1s";
+				astate = "on";
+			}else{
+				true2.style.opacity = "0";
+				astate = "off";
+				}
+			}
+
+			var istate = "off";
+				d4.onclick = function(){
+			if(astate == "off"){
+			true3.style.opacity = "1";
+				true3.style.animation = "scale-in-ver-center 1s";
+				astate = "on";
+			}else{
+				true3.style.opacity = "0";
+				astate = "off";
+				}
+			}
+
+
+
+
+		}
+
+		
+</script>
+</body>
+</html>
